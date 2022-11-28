@@ -50,7 +50,7 @@ if (!function_exists(__NAMESPACE__ . '\arrayRandValues')) {
 /**
  *  STRINGS
  */
-const ALPHANUMERIC = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const ALPHANUMERIC_CHAR = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const NATURAL_DIGITS_CHAR = '123456789';
 const DIGITS_CHAR = '0123456789';
 
@@ -62,7 +62,7 @@ if (!function_exists(__NAMESPACE__ . '\randomString')) {
      *
      * @throws \Exception
      */
-    function randomString(int $length, string $characters = ALPHANUMERIC): string
+    function randomString(int $length, string $characters = ALPHANUMERIC_CHAR): string
     {
         $charactersLength = strlen($characters);
         $randomString = '';

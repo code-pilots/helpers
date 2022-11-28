@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use const CodePilots\Helpers\ALPHANUMERIC;
+use const CodePilots\Helpers\ALPHANUMERIC_CHAR;
 use PHPUnit\Framework\TestCase;
 use function CodePilots\Helpers\randomString;
 
@@ -38,8 +38,8 @@ final class RandomStringTest extends TestCase
             [0, '1'],
             [1, '1'],
             [5, '1'],
-            [1, ALPHANUMERIC],
-            [5, ALPHANUMERIC],
+            [1, ALPHANUMERIC_CHAR],
+            [5, ALPHANUMERIC_CHAR],
         ];
     }
 }
