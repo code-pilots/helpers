@@ -29,6 +29,7 @@ if (!function_exists(__NAMESPACE__ . '\arrayRandValues')) {
      * @template TValue
      *
      * @param non-empty-array<array-key, TValue> $array
+     * @param positive-int                       $num
      *
      * @return non-empty-array<array-key, TValue>
      */
@@ -42,6 +43,7 @@ if (!function_exists(__NAMESPACE__ . '\arrayRandValues')) {
         foreach ($keys as $key) {
             $result[$key] = $array[$key];
         }
+        assert([] !== $result);
 
         return $result;
     }

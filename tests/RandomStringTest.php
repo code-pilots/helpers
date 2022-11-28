@@ -35,7 +35,6 @@ final class RandomStringTest extends TestCase
     private function dataProvider(): array
     {
         return [
-            [0, '1'],
             [1, '1'],
             [5, '1'],
             [1, ALPHANUMERIC_CHAR],
