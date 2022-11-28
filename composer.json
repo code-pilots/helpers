@@ -1,0 +1,40 @@
+{
+    "name": "code-pilots/helpers",
+    "description": "PHP library of useful functions and classes preferred to use in company in place of alternative solutions",
+    "keywords": [
+        "php",
+        "helpers",
+        "functions"
+    ],
+    "homepage": "https://github.com/code-pilots/helpers",
+    "authors": [
+        {
+            "name": "Roman Yastrebov",
+            "email": "tirastwo@gmail.com"
+        },
+        {
+            "name": "Vladyslav Ogniev",
+            "email": "korvin96@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^4.0|^5.4",
+        "vimeo/psalm": "^4.30",
+        "friendsofphp/php-cs-fixer": "^3.13"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ],
+        "psr-4": {
+            "CodePilots\\Helpers\\": "src/"
+        }
+    }
+}
