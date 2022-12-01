@@ -106,8 +106,9 @@ if (!function_exists(__NAMESPACE__ . '\iterableChunks')) {
      * @template TValue
      *
      * @param iterable<TValue> $iterable
+     * @param positive-int     $length
      *
-     * @return \Generator<list<TValue>>
+     * @return \Generator<int, non-empty-list>
      */
     function iterableChunks(iterable $iterable, int $length): \Generator
     {
